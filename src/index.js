@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import { Paper } from 'material-ui';
+
 import {
   SortingState,
   LocalSorting,
@@ -19,7 +21,7 @@ import {
 import { columns, rows } from './data';
 
 const App = () => (
-  <div>
+  <Paper>
     <Grid columns={columns} rows={rows}>
       <PagingState defaultPageSize={5} />
       <SortingState
@@ -33,7 +35,7 @@ const App = () => (
       <TableHeaderRow allowSorting allowDragging />
       <PagingPanel allowedPageSizes={[0, 5, 10, 20]} />
     </Grid>
-  </div>
+  </Paper>
 );
 
 render(<App />, document.getElementById('root'));

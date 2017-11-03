@@ -26,7 +26,12 @@ const rows = [
     artist: 'Bruce Springsteen',
     year: 1984
   },
-  { id: 7, name: 'Disraeli Gears', artist: 'Cream', year: 1967 },
+  {
+    id: 7,
+    name: 'Disraeli Gears',
+    artist: 'Cream',
+    year: 1967
+  },
   {
     id: 8,
     name: 'Between the Buttons',
